@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form>
+<label>First Name: <input type="text" placeholder="First name" name="First Name"></label><br>
+        Last Name: <input type="text" name="Last Name"><br>
+        <label for="Username">Username:</label><br>
+        <input id="Username" type="text" placeholder="Username" required><br>
+        <label>Password: <input type="password" placeholder="password" name="password" required></label>
+        <br>
+        Email: <input type="email" required placeholder="random@email.com" name="email" min="5">
+        <br>
+        Birthday: <input type="date" name="Birthday"><br>
+
+        Gender: <input type="radio" name="gender" value="Male">Male<br>
+        <input type="radio" name="gender" value="female">female<br>
+        <input type="radio" name="gender" value="other">other<br>
+
+        cars:<br>
+        <select>
+            <option value="nissan" name="nissan">nissan</option>
+            <option value="volvo" name="volvo">Volvo</option>
+            <option value="renault" name="renault">renault</option>
+            <option value="ford" name="ford">Ford</option>
+        </select>
+        <input type="submit" value="Registrar">
+        <input type="reset" value="resetar">
+    </form>
+</body>
+
+</html>
+
+<!-- <form></form>  formularios mais comuns
+enter your name, <input type="text"> self closing tag, 
+type = atributo = text valor 
+<input type="submit" value ="Registro" nome do botão>
+<input type "reset"> reseta o formulario
+required é assumido como verdadeiro  e se nao tiver info vai dar um erro,
+existe um valor especifico para emails "email" 
+-->
+<!-- dois atributos 
+action onde o formulario manda os dados
+method qual metodo de http (get ou post) -->
+
+?First+Name=dasdas&Last+Name=daasda&password=dasdadasdsadsadas&email=fakemail%40gmail.com
+&Birthday=0011-11-11&gender=on
+
+<!-- First Name: <input type="text" placeholder="First name" name="First Name"><br>
+Last Name: <input type="text" name="Last Name"><br>
+<label>Password: <input type="password" placeholder="password" name="password"></label>
+<br>
+Email: <input type="email" required placeholder="random@email.com" name="email" min="5">
+<br>
+Birthday: <input type="date" name="Birthday"><br>
+
+Gender: <input type="radio" name="gender" value="Male">Male<br>
+<input type="radio" name="gender" value="female">female<br>
+<input type="radio" name="gender" value="other">other<br>
+
+Required é boleano e n precisa de um true ou falso, ele so funciona se for colocado
+-->
